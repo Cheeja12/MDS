@@ -1,0 +1,21 @@
+.terms {
+  padding: 20px;
+  margin: 20px;
+  background-color: #9be5aa;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100vw;
+}
+
+.terms h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.terms p {
+  font-size: 18px;
+margin-bottom: 20px;
+
+  line-height: 1.5;
+}

@@ -1,0 +1,147 @@
+body {
+  overflow-x: hidden; 
+}
+
+.component {
+  background-color: #9be5aa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.loginmain {
+  width: 70vw;
+  height: 100vh; 
+  background-color:#82cc91 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  border-radius: 0 0 50px 50px;
+  clip-path: inset(0 0 0 0 round 300px); 
+}
+
+.form-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: url('../assets/bgphoto.png'); 
+  background-size: cover;
+  background-position: center;
+  color: rgb(233, 247, 234);
+  margin-bottom: 40px;
+  position: relative; 
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] { 
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 5px;
+  min-height: 40px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: rgb(242, 238, 238);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:disabled {
+  background-color: #9e9e9e;
+}
+
+.forgot-password {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #f4fef5;
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.google-login {
+  background-color: #4285f4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.google-login:hover {
+  background-color: #357ae8;
+}
+
+
+.signup-redirect {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signup-redirect p {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.signup-button {
+  background-color: #4caf50; 
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.signup-button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 10px;
+  }
+
+  button[type="submit"], .google-login {
+    padding: 8px;
+  }
+}
